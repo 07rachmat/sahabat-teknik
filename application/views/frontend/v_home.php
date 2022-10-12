@@ -64,39 +64,6 @@
     </div>
     <!-- end Hero section -->
 
-    <!-- Features section -->
-    <div class="section">
-        <div class="container text-center icon-4xl">
-            <div class="row g-5">
-                <!-- Feature box 1 -->
-                <div class="col-12 col-lg-4">
-                    <div class="text-dark margin-bottom-10">
-                        <i class="bi bi-brush"></i>
-                    </div>
-                    <h5 class="fw-normal">Panggil Teknisi</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                </div>
-                <!-- Feature box 2 -->
-                <div class="col-12 col-lg-4">
-                    <div class="text-dark margin-bottom-10">
-                        <i class="bi bi-lightning"></i>
-                    </div>
-                    <h5 class="fw-normal">Derek</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                </div>
-                <!-- Feature box 3 -->
-                <div class="col-12 col-lg-4">
-                    <div class="text-dark margin-bottom-10">
-                        <i class="bi bi-layers"></i>
-                    </div>
-                    <h5 class="fw-normal">Sparepars</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                </div>
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </div>
-    <!-- end Features section -->
-
     <!-- About section -->
     <div class="section border-top" id="tentang">
         <div class="container">
@@ -106,7 +73,9 @@
                 </div>
                 <div class="col-12 col-lg-6 order-lg-1">
                     <h3 class="fw-light">Tentang Kami</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                    <p>Sahabat teknik adalah solusi untuk masyarakat yang butuh bantuan perihal kerusakan
+                        dalam mesin kendaraan. Kami siap melayani 24 Jam dimana pun anda berada. Selain itu
+                        kami juga memiliki teknisi-teknisi yang berpengalaman dalam bidangnya.</p>
                 </div>
             </div><!-- end row -->
         </div><!-- end container -->
