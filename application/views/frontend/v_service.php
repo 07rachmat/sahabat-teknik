@@ -33,7 +33,7 @@
             <div class="header-menu">
                 <ul class="nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= base_url('home') ?>">Home</a>
+                        <a class="nav-link" href="<?= base_url('home') ?>#home">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="<?= base_url('home') ?>#tentang">Tentang</a>
@@ -108,7 +108,7 @@
                     </div>
                     <div class="col-12 col-md-6 text-center text-md-end">
                         <ul class="list-inline-dash">
-                            <li><a href="<?= base_url('home') ?>">Home</a></li>
+                            <li><a href="<?= base_url('home') ?>#home">Home</a></li>
                             <li><a href="<?= base_url('home') ?>#tentang">Tentang</a></li>
                             <li><a href="<?= base_url('service') ?>">Service</a></li>
                         </ul>

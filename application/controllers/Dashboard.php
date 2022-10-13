@@ -10,6 +10,7 @@ class Dashboard extends CI_Controller
         akses_admin();
     }
 
+    // Menampilkan halaman dashboard dan menghitung data berdasarkan data yang ada
     public function index()
     {
         $data = [

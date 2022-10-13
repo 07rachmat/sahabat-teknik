@@ -10,6 +10,7 @@ class Teknisi extends CI_Controller
         akses_admin();
     }
 
+    //menampilkan halaman utama teknisi
     public function index()
     {
         $data = [
@@ -22,6 +23,7 @@ class Teknisi extends CI_Controller
         $this->load->view('layouts/v_footer');
     }
 
+    //menampilkan halaman tambah & proses tambah data teknisi
     public function create()
     {
         $this->form_validation->set_rules('nama_user', 'nama', 'required|trim');
@@ -85,6 +87,7 @@ class Teknisi extends CI_Controller
         }
     }
 
+    //menampilkan halaman edit & proses edit data teknisi
     public function edit($id)
     {
         $this->form_validation->set_rules('nama_user', 'nama', 'required|trim');
@@ -161,6 +164,7 @@ class Teknisi extends CI_Controller
         }
     }
 
+    //menghapus data teknisi
     public function delete($id)
     {
         $row = $this->db->get_where('users', ['id_user' => $id])->row();

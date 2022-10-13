@@ -9,6 +9,7 @@ class Derek extends CI_Controller
         akses_login();
     }
 
+    //menampilkan halaman utama derek
     public function index()
     {
         $data = [
@@ -21,6 +22,7 @@ class Derek extends CI_Controller
         $this->load->view('layouts/v_footer');
     }
 
+    //menampilkan halaman tambah & proses tambah data derek
     public function create()
     {
         $this->form_validation->set_rules('nama_derek', 'nama', 'required|trim');
@@ -55,6 +57,7 @@ class Derek extends CI_Controller
         }
     }
 
+    //menampilkan halaman edit & proses edit data derek
     public function edit($id)
     {
         $this->form_validation->set_rules('nama_derek', 'nama', 'required|trim');
@@ -92,6 +95,7 @@ class Derek extends CI_Controller
         }
     }
 
+    //menghapus data derek
     public function delete($id)
     {
         $this->db->delete('derek', ['id_derek' => $id]);

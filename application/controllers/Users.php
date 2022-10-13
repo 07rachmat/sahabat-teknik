@@ -10,6 +10,7 @@ class Users extends CI_Controller
         akses_admin();
     }
 
+    //menampilkan halaman utama users
     public function index()
     {
         $data = [
@@ -22,6 +23,7 @@ class Users extends CI_Controller
         $this->load->view('layouts/v_footer');
     }
 
+    //menampilkan halaman tambah & proses tambah data users
     public function create()
     {
         $this->form_validation->set_rules('nama_user', 'nama', 'required|trim');
@@ -86,6 +88,7 @@ class Users extends CI_Controller
         }
     }
 
+    //menampilkan halaman edit & proses edit data users
     public function edit($id)
     {
         $this->form_validation->set_rules('nama_user', 'nama', 'required|trim');
@@ -161,6 +164,7 @@ class Users extends CI_Controller
         }
     }
 
+    //menghapus data users
     public function delete($id)
     {
         $row = $this->db->get_where('users', ['id_user' => $id])->row();

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 12, 2022 at 03:34 PM
+-- Generation Time: Oct 13, 2022 at 06:43 AM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -68,8 +68,7 @@ CREATE TABLE `pengajuan` (
 
 INSERT INTO `pengajuan` (`id_pengajuan`, `nama_pelanggan`, `no_telepon`, `merk_kendaraan`, `tipe_unit`, `deskripsi_kerusakan`, `no_plat`, `alamat_lokasi`, `jenis_service`, `status`) VALUES
 (2, 'Test', '085236987412', 'Honda', 'Honda Jazz', 'Mogok nabrak pohon', 'E 1234 SKM', 'Jakarta', 'Derek', 'proses'),
-(3, 'Rizki Kurniawan', '085214789632', 'Toyota', 'Fortuner', 'Kena banjir', 'B 2323 MMM', 'Cirebon', 'Panggil Teknisi', 'selesai'),
-(5, 'as', '545', 'asa', 'asas', 'qasa', 'asa', 'asa', 'asa', 'ditolak');
+(3, 'Rizki Kurniawan', '085214789632', 'Toyota', 'Fortuner', 'Kena banjir', 'B 2323 MMM', 'Cirebon', 'Panggil Teknisi', 'selesai');
 
 -- --------------------------------------------------------
 
@@ -115,7 +114,7 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id_user`, `nama_user`, `username`, `password`, `no_telepon`, `jenis_kelamin`, `foto`, `level`, `status`) VALUES
 (1, 'Admin Name', 'admin', '$2y$10$JGEcUrno50YpCiIXUk7aiuj0pvXCh84kOKSf0WLoO1n7it9kollpy', '085214785236', 'L', 'avatar.png', 'admin', 'aktif'),
-(11, 'Dadan', 'teknisi', '$2y$10$tCwk.Wira7xGRR43Yop/TOikqH2x3anBQ4EvKQZ0ghxHD7Y.TPc8W', '0085214789632', 'L', 'avatar.png', 'teknisi', 'nonaktif');
+(11, 'Teknisi Name', 'teknisi', '$2y$10$aEqw5HmGZtqfeIpH0hcZoeuF5/xgPS3L/987myQJiohrf6awJdJVe', '0085214789632', 'L', 'avatar.png', 'teknisi', 'aktif');
 
 --
 -- Indexes for dumped tables

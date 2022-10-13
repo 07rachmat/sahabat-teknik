@@ -9,6 +9,7 @@ class Ganti_password extends CI_Controller
         akses_login();
     }
 
+    //menampilkan halaman ganti password & proses ganti password 
     public function index()
     {
         $this->form_validation->set_rules('password_lama', 'password lama', 'required');

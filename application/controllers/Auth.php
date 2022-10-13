@@ -3,6 +3,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Auth extends CI_Controller
 {
+
+    //Menampilkan halaman login
     public function index()
     {
         if ($this->session->userdata('status') == 'login') {
@@ -19,6 +21,7 @@ class Auth extends CI_Controller
         $this->load->view('layouts/auth_footer');
     }
 
+    //Berfungsi untuk proses login
     public function login_proses()
     {
         if ($this->session->userdata('status') == 'login') {

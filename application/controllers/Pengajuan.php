@@ -9,6 +9,8 @@ class Pengajuan extends CI_Controller
         akses_login();
     }
 
+
+    //Menampilkan data pengajuan
     public function index()
     {
         $data = [
@@ -21,6 +23,7 @@ class Pengajuan extends CI_Controller
         $this->load->view('layouts/v_footer');
     }
 
+    //Menampilkan detail pengajuan 
     public function detail($id)
     {
         $data = [
@@ -33,6 +36,7 @@ class Pengajuan extends CI_Controller
         $this->load->view('layouts/v_footer');
     }
 
+    //Menampilkan proses ubah status pengajuan 
     public function edit($id)
     {
         $this->form_validation->set_rules('status_pengajuan', 'status pengajuan', 'required|trim');
@@ -64,6 +68,7 @@ class Pengajuan extends CI_Controller
         }
     }
 
+    //hapus data pengajuan
     public function delete($id)
     {
         $this->db->delete('pengajuan', ['id_pengajuan' => $id]);

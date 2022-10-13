@@ -9,6 +9,7 @@ class Spareparts extends CI_Controller
         akses_login();
     }
 
+    //menampilkan halaman utama spareparts
     public function index()
     {
         $data = [
@@ -21,6 +22,7 @@ class Spareparts extends CI_Controller
         $this->load->view('layouts/v_footer');
     }
 
+    //menampilkan halaman tambah & proses tambah data spareparts
     public function create()
     {
         $this->form_validation->set_rules('nama', 'nama', 'required|trim');
@@ -51,6 +53,7 @@ class Spareparts extends CI_Controller
         }
     }
 
+    //menampilkan halaman edit & proses edit data spareparts
     public function edit($id)
     {
         $this->form_validation->set_rules('nama', 'nama', 'required|trim');
@@ -84,6 +87,7 @@ class Spareparts extends CI_Controller
         }
     }
 
+    //menghapus data spareparts
     public function delete($id)
     {
         $this->db->delete('spareparts', ['id_spareparts' => $id]);

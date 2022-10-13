@@ -3,16 +3,20 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Home extends CI_Controller
 {
+
+    //Menampilkan halaman home
     public function index()
     {
         $this->load->view('frontend/v_home');
     }
 
+    //Menampilkan halaman service
     public function service()
     {
         $this->load->view('frontend/v_service');
     }
 
+    //proses input form service
     public function proses_service()
     {
         $data = [
